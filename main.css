@@ -1,0 +1,346 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    margin: 0 0 20px;
+}
+
+img {
+    display: block;
+}
+
+h1, p {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: Tiempos Fine;
+    font-size: 32pt;
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow-y: hidden;
+}
+
+nav img {
+    height: 4vh;
+    margin: 0 20px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-family: DM Sans;
+    font-size: 12pt;
+}
+
+.pagina-ativa:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0.1);
+    transition: ease-in-out 200ms transform;
+}
+
+nav a:not(.pagina-ativa):after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transition: ease-in-out 400ms transform;
+}
+
+nav a:hover:after {
+    transform: scaleX(1);
+}
+
+#intro-container {
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-container img {
+    position: relative;
+    height: 52vh;
+    filter: brightness(50%);
+}
+
+#intro-container video {
+    position: absolute;
+    height: 55vh;
+    filter: brightness(80%);
+}
+
+#intro-texto {
+    position: absolute;
+    overflow-y: hidden;
+}
+
+#intro-container p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 38pt;
+    color: white;
+    user-select: none;
+}
+
+#descer-para-mais {
+    display: flex;
+    background-image: radial-gradient(circle at center bottom, rgb(24, 24, 24), black 22%);
+    flex-direction: column;
+    height: 18vh;
+    justify-content: center;
+}
+
+#descer-para-mais * {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    font-size: 14pt;
+    font-family: Inter;
+}
+
+#container-seletor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seletor-superior {
+    display: flex;
+    gap: 25px;
+    margin: 0 15vw;
+    align-items: center;
+}
+
+#seletor-inferior {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom, black 44%, white, black 56%);
+}
+
+#albuns {
+    display: flex;
+    overflow: hidden;
+    width: 60vw;
+    padding: 0 60px 0 0;
+    height: 320px;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+
+.pagina-album {
+    display: flex;
+    gap: 250px;
+    min-width: 100%;
+    padding: 30px;
+    align-items: center;
+}
+
+.pagina-album > img {
+    width: 260px;
+    height: 260px;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 50px;
+}
+
+.pagina-album * {
+    font-family: Inter;
+    text-transform: uppercase;
+}
+
+#seletor-superior > button {
+    background-color: initial;
+    font-family: DM Sans;
+    font-size: 28pt;
+    font-weight: 800;
+    border: 2px solid white;
+    height: 35px;
+    padding-bottom: 5px;
+    line-height: 0;
+    background-color: black;
+    color: white;
+}
+
+#seletor-superior > button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#seletor-inferior button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#seletor-inferior button:hover {
+    cursor: pointer;
+}
+
+#albuns a img {
+    height: 20px;
+}
+
+#albuns a {
+    background-color: initial;
+    border: none;
+}
+
+#albuns h2 {
+    margin-bottom: 4px;
+}
+
+#albuns p {
+    margin-top: 4px;
+}
+
+.streaming-apps {
+    display: flex;
+    gap: 10px;
+    padding: 7px 15px 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.album-ativo {
+    background-color: white !important;
+    color: black !important;
+    font-weight: 900 !important;
+}
+
+#album-3 {
+    background-image: radial-gradient(circle farthest-corner at right center, #3d3d3d 55%, #797979 80%);
+}
+
+#album-nny {
+    background-image: radial-gradient(circle farthest-corner at right center, #f34d00 55%, #ffa620 70%);
+}
+
+#album-coap {
+    background-image: radial-gradient(circle farthest-corner at right center, #fa3c65 50%, #a07fa7, #48c2e8 70%);
+}
+
+#album-persona {
+    background-image: radial-gradient(circle farthest-corner at right center, #415bb1 55%, #5d6aa5 70%);
+}
+
+.pagina-album *, nav a {
+    color: white;
+}
+
+/* Fontes */
+@font-face {
+    font-family: Inter;
+    src: url(fontes/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: DM Sans;
+    src: url(fontes/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Mangrope;
+    src: url(fontes/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Tiempos Fine;
+    src: url("fontes/Tiempos Fine/TestTiemposFine-Regular.otf");
+}
+
+/* Animações */
+
+#intro-container img {
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+#intro-container p {
+    animation-duration: 1.25s;
+    animation-delay: 3.5s;
+}
+
+#seta-descer {
+    font-size: 18pt;
+    position: relative;
+    animation-name: flutuando;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+nav img, nav a {
+    animation-duration: 1s;
+}
+
+.anim-entrada-texto {
+    animation-name: entrada-texto;
+    animation-fill-mode: backwards;
+}
+
+.anim-entrada-imagem {
+    animation-name: entrada-imagem;
+    animation-fill-mode: backwards;
+}
+
+@keyframes entrada-texto {
+    0% { 
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entrada-imagem {
+    0% { 
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(50%);
+    }
+}
+
+@keyframes flutuando {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 20px
+    }
+    100% {
+        bottom: 0;
+    }
+}

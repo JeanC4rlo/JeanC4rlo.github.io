@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>half•alive</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="favicon.webp">
+    </head>
+    <body onload="habilitarRolamento(), rodarVideo()">
+        <header>
+            <img src="" alt="">
+            <nav>
+                <a class="anim-entrada-texto pagina-ativa" href="index.html">Início</a>
+                <a class="anim-entrada-texto" href="">Discografia</a>
+                <img class="anim-entrada-texto" src="imagens/logos/half-alive.png" alt="">
+                <a class="anim-entrada-texto" href="">Sobre a banda</a>
+                <a class="anim-entrada-texto" href="">Sobre mim</a>
+            </nav>
+        </header>
+
+        <div id="intro-container">
+            <img class="anim-entrada-imagem" src="imagens/misc/half-alive.jpg" alt="">
+            <video id="video-intro" src=""></video>
+            <div id="intro-texto">
+                <p class="anim-entrada-texto">Isso é estar half•alive.</p>
+            </div>
+        </div>
+
+        <div id="descer-para-mais">
+            <a href="#container-seletor">
+                <p id="seta-descer">↓</p>
+                <p>desça para saber mais</p>
+            </a>
+        </div>
+
+        <h1>Álbuns</h1>
+        <div id="container-seletor">
+            <div id="seletor-superior">
+                <button id="botao-esquerda" onclick="rolamentoEsquerda()">&lt;</button>
+                <div id="albuns">
+                    <div id="album-3" class="pagina-album">
+                        <img src="imagens/albuns/3.jpeg" alt="">
+                        <div>
+                            <h2>3</h2>
+                            <p>3 músicas | 2017</p>
+                            <div class="streaming-apps">
+                                <a href="https://open.spotify.com/intl-pt/album/6Ae06PksOpCGPcqqwKTF5n" target="_blank">
+                                    <img src="imagens/logos/spotify.png" alt="">
+                                </a>
+                                <a href="https://music.apple.com/br/album/3-single/1308651350" target="_blank">
+                                    <img src="imagens/logos/apple_music.png" alt="">
+                                </a>
+                                <a href="https://music.youtube.com/playlist?list=OLAK5uy_mnsdyIO4OGEZnM0JcZvfgaJRIXfFa0-Yg" target="_blank">
+                                    <img src="imagens/logos/yt_music.png" alt="">
+                                </a>
+                                <a href="https://soundcloud.com/halfaliveco/sets/3ep?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                                    <img src="imagens/logos/soundcloud.png" alt="">
+                                </a>
+                                <a href="https://www.deezer.com/pt/album/81606212" target="_blank">
+                                    <img src="imagens/logos/deezer.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="album-nny" class="pagina-album">
+                        <img src="imagens/albuns/now_not_yet.jpg" alt="">
+                        <div>
+                            <h2>Now, Not Yet</h2>
+                            <p>12 músicas | 2019</p>
+                            <div class="streaming-apps">
+                                <a href="https://open.spotify.com/intl-pt/album/2KSWrd22LGc0Hmqs2Z5i7z" target="_blank">
+                                    <img src="imagens/logos/spotify.png" alt="">
+                                </a>
+                                <a href="https://music.apple.com/br/album/now-not-yet/1467958791" target="_blank">
+                                    <img src="imagens/logos/apple_music.png" alt="">
+                                </a>
+                                <a href="https://music.youtube.com/playlist?list=OLAK5uy_kTWy6IETdrAC_a3j8B03G2l0LXYuYr6Ms" target="_blank">
+                                    <img src="imagens/logos/yt_music.png" alt="">
+                                </a>
+                                <a href="https://www.deezer.com/pt/album/106079792" target="_blank">
+                                    <img src="imagens/logos/deezer.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="album-coap" class="pagina-album">
+                        <img src="imagens/albuns/cdp.jpeg" alt="">
+                        <div>
+                            <h2>Conditions of a Punk</h2>
+                            <p>18 músicas | 2022</p>
+                            <div class="streaming-apps">
+                                <a href="https://open.spotify.com/intl-pt/album/4mdZ4AxMYHZk3qE5jBmlzM" target="_blank">
+                                    <img src="imagens/logos/spotify.png" alt="">
+                                </a>
+                                <a href="https://music.apple.com/br/album/conditions-of-a-punk/1649421677" target="_blank">
+                                    <img src="imagens/logos/apple_music.png" alt="">
+                                </a>
+                                <a href="https://music.youtube.com/playlist?list=OLAK5uy_khfs5bBGe1GjoQIEDaVQynjdhQj5zUtqU" target="_blank">
+                                    <img src="imagens/logos/yt_music.png" alt="">
+                                </a>
+                                <a href="https://www.deezer.com/pt/album/106079792" target="_blank">
+                                    <img src="imagens/logos/deezer.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="album-persona" class="pagina-album">
+                        <img src="imagens/albuns/persona.webp" alt="">
+                        <div>
+                            <h2>Persona</h2>
+                            <p>11 músicas | 2024</p>
+                            <div class="streaming-apps">
+                                <a href="" target="_blank">
+                                    <img src="imagens/logos/spotify.png" alt="">
+                                </a>
+                                <a href="" target="_blank">
+                                    <img src="imagens/logos/apple_music.png" alt="">
+                                </a>
+                                <a href="" target="_blank">
+                                    <img src="imagens/logos/yt_music.png" alt="">
+                                </a>
+                                <a href="" target="_blank">
+                                    <img src="imagens/logos/deezer.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="rolamentoDireita()">&gt;</button>
+            </div>
+            <div id="seletor-inferior">
+                <button onclick="rolarPara(0)" class="botoes-paginas">1</button>
+                <button onclick="rolarPara(1)" class="botoes-paginas">2</button>
+                <button onclick="rolarPara(2)" class="botoes-paginas">3</button>
+                <button onclick="rolarPara(3)" class="botoes-paginas">4</button>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="videos.js"></script>
+    </body>
+</html>

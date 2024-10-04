@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="favicon.webp">
     </head>
-    <body onload="habilitarRolamento(), rodarVideo()">
+    <body onload="habilitarRolamento(), delayVideo()">
         <header>
             <img src="" alt="">
             <nav>
@@ -15,15 +15,15 @@
                 <a class="anim-entrada-texto" href="">Discografia</a>
                 <img class="anim-entrada-texto" src="imagens/logos/half-alive.png" alt="">
                 <a class="anim-entrada-texto" href="">Sobre a banda</a>
-                <a class="anim-entrada-texto" href="">Sobre mim</a>
+                <a class="anim-entrada-texto" href="">Sobre mim & site</a>
             </nav>
         </header>
 
         <div id="intro-container">
-            <img class="anim-entrada-imagem" src="imagens/misc/half-alive.jpg" alt="">
-            <video id="video-intro" src=""></video>
+            <img id="intro-fundo" class="anim-entrada-imagem" src="imagens/misc/half-alive.jpg" alt="">
+            <video muted id="video-intro" src=""></video>
             <div id="intro-texto">
-                <p class="anim-entrada-texto">Isso é estar half•alive.</p>
+                <p class="anim-entrada-texto">Isso é estar <span>half•alive.</span></p>
             </div>
         </div>
 
@@ -108,20 +108,11 @@
                     <div id="album-persona" class="pagina-album">
                         <img src="imagens/albuns/persona.webp" alt="">
                         <div>
-                            <h2>Persona</h2>
+                            <h2 class="pre-release">Persona</h2>
                             <p>11 músicas | 2024</p>
                             <div class="streaming-apps">
                                 <a href="" target="_blank">
-                                    <img src="imagens/logos/spotify.png" alt="">
-                                </a>
-                                <a href="" target="_blank">
-                                    <img src="imagens/logos/apple_music.png" alt="">
-                                </a>
-                                <a href="" target="_blank">
-                                    <img src="imagens/logos/yt_music.png" alt="">
-                                </a>
-                                <a href="" target="_blank">
-                                    <img src="imagens/logos/deezer.webp" alt="">
+                                    <img src="https://open.spotify.com/prerelease/4C3F9tvXRXCW6sVjbAfKuB" alt="">
                                 </a>
                             </div>
                         </div>
@@ -137,7 +128,14 @@
             </div>
         </div>
 
+        <button id="mutar-botao">
+            <img src="imagens/misc/ui/sound.png">
+        </button>
+
+        <a href="">https://www.flaticon.com/packs/ui-miscellaneous</a>
+
         <script src="main.js"></script>
         <script src="videos.js"></script>
+        <script src="som.js"></script>
     </body>
 </html>

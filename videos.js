@@ -5,7 +5,10 @@ const fontesVideo = [
     "https://jeanc4rlo.github.io/videos/sophies-house.webm",
     "https://jeanc4rlo.github.io/videos/dimyu.webm",
     "https://jeanc4rlo.github.io/videos/still-feel.mp4",
-    "https://jeanc4rlo.github.io/videos/time2.webm"
+    "https://jeanc4rlo.github.io/videos/time2.webm",
+    "https://jeanc4rlo.github.io/videos/nobody.mp4",
+    "https://jeanc4rlo.github.io/videos/whats-wrong.webm",
+    "https://jeanc4rlo.github.io/videos/subliminal.webm"
 ];
 
 let videoContador = -1;
@@ -41,7 +44,7 @@ function delayVideo() {
         fundoEl.classList.remove("anim-saida-imagem");
         fundoEl.classList.add("anim-entrada-imagem");
         videoEl.setAttribute("src", "undefined");
-        setTimeout(proximoVideo, 10000);
+        setTimeout(proximoVideo, 6000);
     }, 4600);
 }
 

@@ -80,4 +80,12 @@ function ativarAlbum() {
     botoesPaginasEl[rolamentos].classList.add("album-ativo");
 }
 
+window.addEventListener("resize", (e) => {
+    larguraPagina = paginaEl[0].offsetWidth;
+    seletorEl.scroll({
+        left: larguraPagina * rolamentos,
+        top: 0,
+    });
+})
+
 ativarAlbum();

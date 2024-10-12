@@ -4,6 +4,7 @@ const fundoEl = document.getElementById("intro-fundo");
 const fontesVideo = [
     "https://jeanc4rlo.github.io/videos/sophies-house.webm",
     "https://jeanc4rlo.github.io/videos/dimyu.webm",
+    "https://jeanc4rlo.github.io/videos/summerland.webm",
     "https://jeanc4rlo.github.io/videos/still-feel.mp4",
     "https://jeanc4rlo.github.io/videos/time2.webm",
     "https://jeanc4rlo.github.io/videos/nobody.mp4",
@@ -22,7 +23,7 @@ function rodarVideo() {
         videoEl.classList.remove("anim-saida-video");
         videoEl.classList.add("anim-entrada-video");
 
-        if(videoContador == 3) {
+        if(videoContador == 4) {
             videoEl.volume = 0.3;
         } else {
             videoEl.volume = 0.5;

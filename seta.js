@@ -1,17 +1,16 @@
-const setaEl = document.getElementById("descer-para-mais");
-const linkEl = document.getElementById("link-seta");
-
-window.addEventListener("scroll", atualizarSeta);
+const linkEl = document.querySelector("#desca-para-mais");
 
 function atualizarSeta() {
-    if(window.scrollY >= (window.innerHeight / 2)) {
-        setaEl.classList.add("invisivel");
+    if(window.scrollY >= (window.innerHeight * (60 / 100))) {
         linkEl.removeAttribute("href");
+        linkEl.classList.add("invisivel");
     }
     else {
-        setaEl.classList.remove("invisivel");
-        linkEl.setAttribute("href", "#container-seletor");
+        linkEl.setAttribute("href", "#conteudo-principal");
+        linkEl.classList.remove("invisivel");
     }
 }
+
+window.addEventListener("scroll", atualizarSeta);
 
 atualizarSeta();

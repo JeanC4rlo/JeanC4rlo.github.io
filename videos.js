@@ -1,5 +1,4 @@
-const videoEl = document.getElementById("video-intro");
-const fundoEl = document.getElementById("intro-fundo");
+const videoEl = document.querySelector("#intro-video");
 
 const fontesVideo = [
     "https://jeanc4rlo.github.io/videos/sophies-house.webm",
@@ -12,38 +11,31 @@ const fontesVideo = [
     "https://jeanc4rlo.github.io/videos/subliminal.webm"
 ];
 
-let videoContador = -1;
+let videoContador = 0;
 let totalVideos = fontesVideo.length;
 
 function rodarVideo() {
-    fundoEl.classList.remove("anim-entrada-imagem");
-    fundoEl.classList.add("anim-saida-imagem");
+    videoEl.classList.remove("anim-intro-saida-video");
+    videoEl.classList.add("anim-intro-entrada-video");
 
-    setTimeout(() => {
-        videoEl.classList.remove("anim-saida-video");
-        videoEl.classList.add("anim-entrada-video");
+    if(videoContador == 4) {
+        videoEl.volume = 0.3;
+    } else {
+        videoEl.volume = 0.5;
+    }
 
-        if(videoContador == 4) {
-            videoEl.volume = 0.3;
-        } else {
-            videoEl.volume = 0.5;
-        }
-
-        videoEl.setAttribute("src", fontesVideo[videoContador]);
-        videoEl.load();
-        videoEl.play();
-    }, 3600);
+    videoEl.setAttribute("src", fontesVideo[videoContador]);
+    videoEl.load();
+    videoEl.play();
 }
 
 videoEl.addEventListener('ended', delayVideo, false);
 
 function delayVideo() {
-    videoEl.classList.remove("anim-entrada-video");
-    videoEl.classList.add("anim-saida-video");
+    videoEl.classList.add("anim-intro-saida-video");
+    videoEl.classList.remove("anim-intro-entrada-video");
 
     setTimeout(() => {
-        fundoEl.classList.remove("anim-saida-imagem");
-        fundoEl.classList.add("anim-entrada-imagem");
         videoEl.setAttribute("src", "undefined");
         setTimeout(proximoVideo, 6000);
     }, 4600);
@@ -59,3 +51,13 @@ function proximoVideo() {
         rodarVideo(videoContador);
     }
 }
+
+function inicializarVideos() {
+    setTimeout(() => {
+        videoEl.classList.remove("anim-intro-saida-video");
+        videoEl.classList.add("anim-intro-entrada-video");
+        rodarVideo();
+    }, 5000);
+}
+
+window.addEventListener("load", inicializarVideos);

@@ -80,12 +80,38 @@ function ativarAlbum() {
     botoesPaginasEl[rolamentos].classList.add("album-ativo");
 }
 
+let startX;
+let deltaX;
+
+seletorEl.addEventListener('touchstart', e => {
+    startX = e.touches[0].pageX;
+    e.preventDefault();
+});
+  
+seletorEl.addEventListener('touchmove', e => {
+    deltaX = e.touches[0].pageX - startX;
+
+    e.preventDefault();
+});
+
+seletorEl.addEventListener('touchend', e => {
+    if(deltaX > 0) {
+        rolamentoEsquerda();
+    } else {
+        rolamentoDireita();
+    }
+
+    e.preventDefault();
+});
+
 window.addEventListener("resize", (e) => {
     larguraPagina = paginaEl[0].offsetWidth;
     seletorEl.scroll({
         left: larguraPagina * rolamentos,
         top: 0,
     });
-})
+});
+
+window.addEventListener("load", habilitarRolamento);
 
 ativarAlbum();

@@ -16,27 +16,30 @@ nav {
     grid-row: 1 / 2;
 }
 
-#botao-hamburguer {
-    display: block;
-}
-
-.item-nav {
-    font-size: 16pt;
-}
-
 #intro-texto {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-content: center;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 #intro-texto p:nth-of-type(1) {
-    font-size: 20pt;
+    font-size: 12pt;
 }
 
 #intro-texto p:nth-of-type(2) {
-    font-size: 40pt;
+    font-size: 25pt;
+}
+
+#botao-mutar {
+    width: 50px;
+    height: 50px;
+}
+
+#botao-mutar img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
 }
 
 #intro-video {
@@ -56,28 +59,56 @@ nav {
     grid-row: 2 / 3;
     justify-self: flex-end;
     align-self: center;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 #desca-para-mais {
     grid-row: 4 / 5;
 }
 
-nav > .item-nav {
-    display: none;
+h1 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#apresentacao-banda {
+    flex-direction: column-reverse;
+    gap: 1em;
+    margin: 0 5vw;
+}
+
+#apresentacao-banda p {
+    font-size: 12pt;
+}
+
+#apresentacao-banda img {
+    max-width: 80vw;
 }
 
 #albuns {
-    width: 60vw;
+    width: 80vw;
+}
+
+#seletor-superior button {
+    display: none;
 }
 
 .pagina-album {
     flex-direction: column;
     justify-content: center;
-    height: fit-content;
     gap: 1em;
+    min-height: 30em;
+    max-height: 30em;
     padding: 30px 0;
     text-align: center;
+}
+
+.pre-release {
+    flex-direction: column;
+}
+
+.pre-release::after {
+    margin-bottom: 0.25em;
 }
 
 .streaming-apps {
@@ -98,4 +129,24 @@ nav > .item-nav {
 
 #album-persona {
     background-image: radial-gradient(circle farthest-corner at center bottom, #415bb1 55%, #5d6aa5 70%);
+}
+
+.item-nav {
+    font-size: 12pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+#botao-hamburguer {
+    font-size: 20pt;
+}
+
+#fechar-menu {
+    font-size: 26pt;
+}
+
+h1 {
+    font-size: 32pt;
 }

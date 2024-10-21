@@ -34,7 +34,7 @@ nav > img {
     left: 0;
     right: 0;
     bottom: -5px;
-    height: 3px;
+    height: 2px;
     transform: scaleX(0);
     transition: transform 400ms ease-in-out;
 }
@@ -54,7 +54,7 @@ nav > img {
     left: 0;
     right: 0;
     bottom: -5px;
-    height: 3px;
+    height: 2px;
     transform: scaleX(0.2);
 }
 

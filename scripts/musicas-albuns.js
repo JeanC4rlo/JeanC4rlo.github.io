@@ -17,13 +17,16 @@ function rodarAudio() {
 }
 
 function inicializarAudio(proximoAudio) {
-    audioEl.pause();
-    audioEl.currentTime = 0;
-
-    if(audioAtual != -1) {
+    if(proximoAudio == audioAtual) {
+        audioEl.pause();
+        audioEl.currentTime = 0;
         botoesEl[audioAtual].setAttribute("src", estadosAudio[0]);
+        audioAtual = -1;
+    } else {
+        if(audioAtual != -1) {
+            botoesEl[audioAtual].setAttribute("src", estadosAudio[0]);
+        }
+        audioAtual = proximoAudio;
+        rodarAudio();
     }
-
-    audioAtual = proximoAudio;
-    rodarAudio();
 }

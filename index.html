@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>half•alive</title>
         <link rel="icon" href="favicon.webp">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="header-medium.css" media="(min-width: 801px) and (max-width: 1600px)">
-        <link rel="stylesheet" href="header-small.css" media="(max-width: 800px)">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="main-medium.css" media="(min-width: 801px) and (max-width: 1600px)">
-        <link rel="stylesheet" href="main-small.css" media="(max-width: 800px)">
+        <link rel="stylesheet" href="estilos/essencial.css">
+        <link rel="stylesheet" href="estilos/header/header.css">
+        <link rel="stylesheet" href="estilos/header/header-medium.css" media="(min-width: 801px) and (max-width: 1600px)">
+        <link rel="stylesheet" href="estilos/header/header-small.css" media="(max-width: 800px)">
+        <link rel="stylesheet" href="estilos/main/main.css">
+        <link rel="stylesheet" href="estilos/main/main-medium.css" media="(min-width: 801px) and (max-width: 1600px)">
+        <link rel="stylesheet" href="estilos/main/main-small.css" media="(max-width: 800px)">
     </head>
     <body>
         <header>
             <nav>
-                <a href="" id="inicio" class="item-nav">
+                <a href="index.html" class="item-nav">
                     <img src="imagens/icones/inicio.png" alt="">
                     <span class="titulos-nav pagina-ativa">Início</span>
                 </a>
-                <a href="" id="discografia" class="item-nav">
+                <a href="albuns/now-not-yet.html" class="item-nav">
                     <img src="imagens/icones/discografia.png" alt="">
                     <span class="titulos-nav">Now, Not Yet</span>
                 </a>
                 <img src="imagens/logos/half-alive.png" alt="">
-                <a href="" id="banda" class="item-nav">
+                <a href="" class="item-nav">
                     <img src="imagens/icones/banda.png" alt="">
                     <span class="titulos-nav">Sobre a banda</span>
                 </a>
-                <a href="" id="sobre-mim" class="item-nav">
+                <a href="sobre-mim.html" class="item-nav">
                     <img src="imagens/icones/eu.png" alt="">
-                    <span class="titulos-nav">Sobre mim & site</span>
+                    <span class="titulos-nav">Sobre mim</span>
                 </a>
 
                 <button id="botao-hamburguer">☰</button>
 
                 <div id="menu-hamburguer">
                     <img src="imagens/logos/half-alive.png" alt="">
-                    <a href="" id="inicio" class="item-nav">
+                    <a href="index.html" id="inicio" class="item-nav">
                         <img src="imagens/icones/inicio.png" alt="">
                         <span class="pagina-ativa">Início</span>
                     </a>
-                    <a href="" id="discografia" class="item-nav">
+                    <a href="albuns/now-not-yet.html" id="discografia" class="item-nav">
                         <img src="imagens/icones/discografia.png" alt="">
                         <span>Now, Not Yet</span>
                     </a>
@@ -49,9 +50,9 @@
                         <img src="imagens/icones/banda.png" alt="">
                         <span>Sobre a banda</span>
                     </a>
-                    <a href="" id="sobre-mim" class="item-nav">
+                    <a href="sobre-mim.html" id="sobre-mim" class="item-nav">
                         <img src="imagens/icones/eu.png" alt="">
-                        <span>Sobre mim & site</span>
+                        <span>Sobre mim</span>
                     </a>
 
                     <button id="fechar-menu">←</button>
@@ -85,7 +86,7 @@
             <h1>Álbuns</h1>
             <div id="container-seletor">
                 <div id="seletor-superior">
-                    <button onclick="rolamentoEsquerda()">&lt;</button>
+                    <button id="botao-esquerda">&lt;</button>
                     <div id="albuns">
                         <div id="album-3" class="pagina-album">
                             <img src="imagens/albuns/3.jpeg" alt="">
@@ -166,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="rolamentoDireita()">&gt;</button>
+                    <button id="botao-direita">&gt;</button>
                 </div>
                 <div id="seletor-inferior">
                     <button onclick="rolarPara(0)" class="botoes-paginas">1</button>
@@ -177,10 +178,10 @@
             </div>
         </main>
 
-        <script src="menu.js"></script>
-        <script src="videos.js"></script>
-        <script src="seta.js"></script>
-        <script src="main.js"></script>
-        <script src="som.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/videos.js"></script>
+        <script src="scripts/seta.js"></script>
+        <script src="scripts/scroll_automatico.js"></script>
+        <script src="scripts/som.js"></script>
     </body>
 </html>

@@ -1,0 +1,22 @@
+.streaming-apps {
+    gap: 1em;
+    padding: 1em 1.5em 1em;
+    border-radius: 20px;
+}
+
+.streaming-apps img {
+    max-width: 30px;
+}
+
+td {
+    padding: 1em 0;
+}
+
+button {
+    background-color: initial;
+    border: none;
+}
+
+button img {
+    width: 3em;
+}

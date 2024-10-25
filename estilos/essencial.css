@@ -78,7 +78,7 @@ details {
 }
 
 #botao-hamburguer {
-    font-size: 20pt;
+    font-size: 3vh;
 }
 
 #fechar-menu {
@@ -86,6 +86,10 @@ details {
 }
 
 /* FONTES */
+
+h1 {
+    font-family: Tiempos Fine, serif;
+}
 
 p, summary, th {
     font-family: Inter;
@@ -107,10 +111,15 @@ details, td {
 
 @font-face {
     font-family: Inter;
-    src: url("../../fontes/Inter/Inter-VariableFont_opsz\,wght.ttf");
+    src: url("../fontes/Inter/Inter-VariableFont_opsz\,wght.ttf");
 }
 
 @font-face {
     font-family: Manrope;
-    src: url("../../fontes/Manrope/Manrope-VariableFont_wght.ttf");
+    src: url("../fontes/Manrope/Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Tiempos Fine;
+    src: url("../fontes/Tiempos Fine/TestTiemposFine-Regular.otf")
 }

@@ -1,0 +1,57 @@
+body > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+body > header div {
+    display: flex;
+    gap: 1.75rem;
+    align-items: center;
+}
+
+body > header div h1 {
+    font-family: Lexend Exa;
+    user-select: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#logo-header {
+    height: 2em;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: white;
+    transition: 500ms ease-in-out transform;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.pagina-atual {
+    font-weight: bold;
+}
+
+.pagina-atual::after {
+    transform: scaleX(0.1);
+}

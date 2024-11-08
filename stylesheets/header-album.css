@@ -1,0 +1,11 @@
+.album-header > img {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+
+header[data-album="now-not-yet"] {
+    background: linear-gradient(to bottom right, rgb(253, 125, 51), orangered);
+}
+
+header[data-album="persona"] {
+    background: linear-gradient(to bottom right, rgb(69, 90, 138), rgb(35, 81, 150));
+}

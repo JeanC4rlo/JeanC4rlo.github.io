@@ -1,4 +1,4 @@
-const videoEl = document.querySelector("#intro-video");
+const videoEl = document.querySelector("video");
 
 const fontesVideo = [
     "https://jeanc4rlo.github.io/videos/sophies-house.webm",

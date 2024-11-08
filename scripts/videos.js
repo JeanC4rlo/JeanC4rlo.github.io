@@ -1,14 +1,16 @@
 const videoEl = document.querySelector("video");
 
 const fontesVideo = [
-    "https://jeanc4rlo.github.io/videos/sophies-house.webm",
-    "https://jeanc4rlo.github.io/videos/dimyu.webm",
-    "https://jeanc4rlo.github.io/videos/summerland.webm",
-    "https://jeanc4rlo.github.io/videos/still-feel.mp4",
-    "https://jeanc4rlo.github.io/videos/time2.webm",
-    "https://jeanc4rlo.github.io/videos/nobody.mp4",
-    "https://jeanc4rlo.github.io/videos/whats-wrong.webm",
-    "https://jeanc4rlo.github.io/videos/subliminal.webm"
+    "https://jeanc4rlo.github.io/videos/half-alive/songs.mp4",
+    "https://jeanc4rlo.github.io/videos/half-alive/sophies-house.webm",
+    "https://jeanc4rlo.github.io/videos/half-alive/dimyu.webm",
+    "https://jeanc4rlo.github.io/videos/half-alive/summerland.webm",
+    "https://jeanc4rlo.github.io/videos/half-alive/still-feel.mp4",
+    "https://jeanc4rlo.github.io/videos/half-alive/time2.webm",
+    "https://jeanc4rlo.github.io/videos/half-alive/nobody.mp4",
+    "https://jeanc4rlo.github.io/videos/half-alive/whats-wrong.webm",
+    "https://jeanc4rlo.github.io/videos/half-alive/automatic.mp4",
+    "https://jeanc4rlo.github.io/videos/half-alive/subliminal.webm"
 ];
 
 let videoContador = 0;

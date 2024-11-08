@@ -17,14 +17,8 @@ let videoContador = 0;
 let totalVideos = fontesVideo.length;
 
 function rodarVideo() {
-    videoEl.classList.remove("anim-intro-saida-video");
-    videoEl.classList.add("anim-intro-entrada-video");
-
-    if(videoContador == 4) {
-        videoEl.volume = 0.3;
-    } else {
-        videoEl.volume = 0.5;
-    }
+    videoEl.classList.remove("anim-saida");
+    videoEl.classList.add("anim-entrada");
 
     videoEl.setAttribute("src", fontesVideo[videoContador]);
     videoEl.load();
@@ -34,11 +28,11 @@ function rodarVideo() {
 videoEl.addEventListener('ended', delayVideo, false);
 
 function delayVideo() {
-    videoEl.classList.add("anim-intro-saida-video");
-    videoEl.classList.remove("anim-intro-entrada-video");
+    videoEl.classList.add("anim-saida");
+    videoEl.classList.remove("anim-entrada");
 
     setTimeout(() => {
-        videoEl.setAttribute("src", "undefined");
+        videoEl.setAttribute("src", "");
         setTimeout(proximoVideo, 6000);
     }, 4600);
 }
@@ -56,8 +50,8 @@ function proximoVideo() {
 
 function inicializarVideos() {
     setTimeout(() => {
-        videoEl.classList.remove("anim-intro-saida-video");
-        videoEl.classList.add("anim-intro-entrada-video");
+        videoEl.classList.remove("anim-saida");
+        videoEl.classList.add("anim-entrada");
         rodarVideo();
     }, 5000);
 }

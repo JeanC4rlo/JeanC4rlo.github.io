@@ -44,6 +44,34 @@ body > aside h1 {
     mask: linear-gradient(to bottom, black 80%, transparent, transparent);
 }
 
+.banner-background button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+.banner-background button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.banner-background button:hover img {
+    filter: brightness(0%);
+}
+
+.banner-background button img {
+    width: 2rem;
+}
+
 body > aside div > img:first-of-type {
     filter: brightness(60%);
     height: 100%;
@@ -228,4 +256,30 @@ table button {
 
 .tabela-visivel {
     display: table;
+}
+
+.anim-entrada {
+    animation: entrada 1s ease-in-out;
+}
+
+.anim-saida {
+    animation: saida 1s ease-in-out;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes saida {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

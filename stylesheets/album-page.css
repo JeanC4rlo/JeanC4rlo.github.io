@@ -33,8 +33,9 @@ body > aside h1 {
 }
 
 #sobre-o-cantor {
+    line-height: 1.4rem;
     margin: 0 1.5rem 1.5rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
     overflow-y: scroll;
     mask: linear-gradient(to bottom, black 90%, transparent, transparent);
 }
@@ -141,6 +142,10 @@ body > aside p {
 
 #container-albums button:nth-of-type(2) {
     border-radius: 0 1rem 1rem 0;
+}
+
+#container-albums h1 {
+    font-size: 22pt;
 }
 
 #album-list {
@@ -258,12 +263,22 @@ table button {
     display: table;
 }
 
+#leia-mais, #leia-menos {
+    display: none;
+}
+
+.texto-visivel {
+    display: inline !important;
+}
+
 .anim-entrada {
     animation: entrada 1s ease-in-out;
+    opacity: 1;
 }
 
 .anim-saida {
     animation: saida 1s ease-in-out;
+    opacity: 0;
 }
 
 @keyframes entrada {

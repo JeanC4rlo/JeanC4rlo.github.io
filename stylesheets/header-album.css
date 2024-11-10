@@ -3,9 +3,13 @@
 }
 
 header[data-album="now-not-yet"] {
-    background: linear-gradient(to bottom right, rgb(253, 125, 51), orangered);
+    background: linear-gradient(to bottom right, rgb(255, 135, 65), orangered);
 }
 
 header[data-album="persona"] {
-    background: linear-gradient(to bottom right, rgb(69, 90, 138), rgb(35, 81, 150));
+    background: linear-gradient(to bottom right, rgb(90, 110, 155), rgb(35, 80, 150));
+}
+
+header[data-album="every-single-thing"] {
+    background: linear-gradient(to bottom right, rgb(40, 40, 60), rgb(35, 25, 55));
 }

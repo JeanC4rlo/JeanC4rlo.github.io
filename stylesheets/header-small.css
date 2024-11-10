@@ -1,0 +1,19 @@
+body {
+    padding: 0 5vw;
+}
+
+body > header div {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+
+body > header {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+}
+
+header nav {
+    display: none;
+}

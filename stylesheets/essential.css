@@ -6,7 +6,12 @@ html {
 
 body {
     margin: 0;
+    padding: 0 2vw;
     background-color: rgb(20, 20, 20);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* CORES DOS TEXTOS */

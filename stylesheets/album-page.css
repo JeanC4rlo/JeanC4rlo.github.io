@@ -2,7 +2,7 @@ body {
     display: grid;
     column-gap: 1rem;
     grid-template-columns: 26vw calc(70vw - 1rem);
-    grid-template-rows: 6rem 15rem calc(100vh - 22rem);
+    grid-template-rows: 6rem 50vh calc(50vh - 7rem);
     grid-template-areas: "header header" "aside container-albums" "aside container-setlist";
 }
 
@@ -39,7 +39,7 @@ body > aside h1 {
 }
 
 .banner-background {
-    height: 45vh;
+    min-height: 45vh;
     mask: linear-gradient(to bottom, black 80%, transparent, transparent);
 }
 
@@ -72,7 +72,7 @@ body > aside h1 {
 }
 
 body > aside div > img:first-of-type {
-    filter: brightness(60%);
+    filter: brightness(70%);
     height: 100%;
     width: 26vw;
     border-radius: 1rem;
@@ -97,11 +97,11 @@ video {
 .banner-logo {
     position: absolute;
     max-height: 7.5rem;
-    max-width: 16vw;
+    max-width: 85%;
     margin: auto;
     left: 0;
     right: 0;
-    bottom: 6rem;
+    bottom: 5.5rem;
     z-index: 2;
 }
 
@@ -151,8 +151,9 @@ body > aside p {
 
 .album-header {
     display: flex;
-    gap: 2em;
-    padding-left: 2em;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     align-items: center;
     box-sizing: border-box;
     min-width: 100%;
@@ -161,18 +162,23 @@ body > aside p {
 }
 
 .album-header > img {
-    width: 10rem;
+    width: 20vw;
+    max-height: 80%;
     border-radius: 0.75rem;
 }
 
+.album-header > div {
+    width: 100%;
+}
+
 .album-header h1 {
-    font-size: 40pt;
+    font-size: 34pt;
     font-weight: 900;
     margin: 0 0 1rem 0;
 }
 
 .album-header p {
-    font-size: 14pt;
+    font-size: 15pt;
     margin: 0.75rem 0;
 }
 
@@ -196,6 +202,7 @@ body > aside p {
 table {
     width: 100%;
     display: none;
+    user-select: none;
 }
 
 td {
@@ -213,10 +220,6 @@ td div p {
 
 td div p:nth-of-type(1) {
     font-weight: bold;
-}
-
-table {
-    user-select: none;
 }
 
 th:nth-of-type(1) {
@@ -246,8 +249,23 @@ tbody tr td:nth-of-type(3) {
 }
 
 table button {
-   display: block;
+   display: flex;
    margin: auto;
+   background-color: rgb(0, 140, 255);
+   border: none;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+}
+
+table button img {
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+}
+
+table button:hover {
+    cursor: pointer;
 }
 
 .song-title {

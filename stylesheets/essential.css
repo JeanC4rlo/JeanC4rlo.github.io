@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 /* CORES DOS TEXTOS */
 
 h1, p, a, th, td, button {

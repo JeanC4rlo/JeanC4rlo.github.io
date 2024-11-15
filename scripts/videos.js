@@ -24,6 +24,16 @@ const fontesVideo = [
         "https://jeanc4rlo.github.io/videos/laufey/bewitched.mp4",
         "https://jeanc4rlo.github.io/videos/laufey/california.mp4",
         "https://jeanc4rlo.github.io/videos/laufey/from-the-start.mp4"
+    ],
+    [ // Clairo
+        "https://jeanc4rlo.github.io/videos/clairo/juna.mp4",
+        "https://jeanc4rlo.github.io/videos/clairo/4ever.mp4",
+        "https://jeanc4rlo.github.io/videos/clairo/pretty-girl.mp4"
+    ],
+    [ // Tessa Violet
+        "https://jeanc4rlo.github.io/videos/tessa-violet/crush.mp4",
+        "https://jeanc4rlo.github.io/videos/tessa-violet/games.mp4",
+        "https://jeanc4rlo.github.io/videos/tessa-violet/not-over-you.mp4"
     ]
 ];
 

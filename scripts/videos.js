@@ -3,11 +3,12 @@ let indiceArtista = videoEl.dataset.artistId;
 
 const fontesVideo = [
     [ // Half Alive
-        "https://jeanc4rlo.github.io/videos/half-alive/songs.mp4",
+        "https://jeanc4rlo.github.io/videos/half-alive/all-my-love.mp4",
         "https://jeanc4rlo.github.io/videos/half-alive/sophies-house.webm",
         "https://jeanc4rlo.github.io/videos/half-alive/dimyu.webm",
         "https://jeanc4rlo.github.io/videos/half-alive/summerland.webm",
         "https://jeanc4rlo.github.io/videos/half-alive/still-feel.mp4",
+        "https://jeanc4rlo.github.io/videos/half-alive/songs.mp4",
         "https://jeanc4rlo.github.io/videos/half-alive/time2.webm",
         "https://jeanc4rlo.github.io/videos/half-alive/nobody.mp4",
         "https://jeanc4rlo.github.io/videos/half-alive/whats-wrong.webm",
@@ -40,6 +41,16 @@ const fontesVideo = [
 let videoContador = 0;
 let totalVideos = fontesVideo[indiceArtista].length;
 
+function aumentarVolumeGradualmente() {
+    if(videoEl.volume >= 0.96) {
+        return;
+    }
+    else {
+        videoEl.volume += 0.08;
+        setTimeout(aumentarVolumeGradualmente, 75);
+    }
+}
+
 function rodarVideo() {
     videoEl.classList.remove("anim-saida");
 
@@ -47,6 +58,8 @@ function rodarVideo() {
     videoEl.load();
     videoEl.play();
 
+    videoEl.volume = 0;
+    aumentarVolumeGradualmente();
     videoEl.classList.add("anim-entrada");
 }
 

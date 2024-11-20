@@ -42,11 +42,12 @@ let totalVideos = fontesVideo[indiceArtista].length;
 
 function rodarVideo() {
     videoEl.classList.remove("anim-saida");
-    videoEl.classList.add("anim-entrada");
 
     videoEl.setAttribute("src", fontesVideo[indiceArtista][videoContador]);
     videoEl.load();
     videoEl.play();
+
+    videoEl.classList.add("anim-entrada");
 }
 
 videoEl.addEventListener('ended', delayVideo, false);

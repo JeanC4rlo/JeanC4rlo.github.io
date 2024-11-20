@@ -72,7 +72,7 @@ body > aside h1 {
 }
 
 body > aside div > img:first-of-type {
-    filter: brightness(70%);
+    filter: brightness(60%);
     height: 100%;
     width: 26vw;
     border-radius: 1rem;
@@ -97,7 +97,7 @@ video {
 .banner-logo {
     position: absolute;
     max-height: 7.5rem;
-    max-width: 85%;
+    max-width: 75%;
     margin: auto;
     left: 0;
     right: 0;

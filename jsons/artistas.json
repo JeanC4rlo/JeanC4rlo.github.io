@@ -1,8 +1,8 @@
-[
-    {
-        "0": {
+{
+    "artistas": [
+        {
             "nome": "half•alive",
-            "dados": "jeanc4rlo.github.io/jsons/half-alive.json"
+            "dados": "https://jeanc4rlo.github.io/jsons/half-alive.json"
         }
-    }
-]
+    ]
+}

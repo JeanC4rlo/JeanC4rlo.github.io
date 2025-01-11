@@ -2,7 +2,10 @@
     "artistas": [
         {
             "nome": "half•alive",
-            "dados": "https://jeanc4rlo.github.io/jsons/half-alive.json"
+            "videos": [
+                "https://jeanc4rlo.github.io/videos/time2.webm",
+                "https://jeanc4rlo.github.io/videos/all-my-love.mp4"
+            ]
         }
     ]
 }

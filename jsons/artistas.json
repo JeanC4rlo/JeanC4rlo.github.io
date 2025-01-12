@@ -1,6 +1,7 @@
 {
     "artistas": [
-        {
+        {   
+            "id": "000",
             "nome": "half•alive",
             "videos": [
                 "https://jeanc4rlo.github.io/videos/time2.webm",

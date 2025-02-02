@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0 10%;
+}
+
+img {
+    display: block;
+}
+
+header h1, header p, 
+main h2 {
+    text-align: center;
+}
+
+header {
+    position: relative;
+    padding: 5vh 0;
+    margin-bottom: 3px;
+}
+
+header p {
+   font-family: Inter; 
+}
+
+header h1 {
+    font-family: Montserrat;
+    font-size: 10vh;
+}
+
+header:after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 50vw;
+    height: 3px;
+
+    margin: auto;
+}
+
+main h2 {
+    font-family: Montserrat;
+    margin-top: 5vh;
+    margin-bottom: 2rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    max-width: 480px;
+}
+
+article img, article h3, article p {
+    pointer-events: none;
+    user-select: none;
+}
+
+article img {
+    width: 480px;
+    padding: 2px;
+}
+
+article a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 10pt;
+
+    margin-top: 1rem;
+}
+
+article h3, article p {
+    hyphens: auto;
+}
+
+article h3 {
+    font-family: Montserrat;
+    font-size: 22pt;
+    margin-bottom: 2px;
+}
+
+article p {
+    font-family: Inter;
+    font-size: 11pt;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.botao-modo-escuro {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 4rem;
+    min-height: 4rem;
+
+    border: none;
+    border-radius: 50%;
+
+    transition: background-color 500ms ease;
+}
+
+.botao-modo-escuro img {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    filter: invert(1);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Modo claro */
+
+body {
+    background-color: #eeeeee;
+}
+
+header:after {
+    background-color: black;
+}
+
+article img {
+    border: 2px solid black;
+}
+
+article a {
+    color: navy;
+}
+
+.botao-modo-escuro {
+    background-color: black;
+}
+
+/* Modo escuro */
+
+body.modo-escuro {
+    background-color: #101010;
+}
+
+header.modo-escuro:after {
+    background-color: white;
+}
+
+h1.modo-escuro, h2.modo-escuro,
+p.modo-escuro {
+    color: white;
+}
+
+article img.modo-escuro {
+    border: 2px solid white;
+}
+
+article a.modo-escuro {
+    color: skyblue;
+} 
+
+article h3.modo-escuro {
+    color: white;
+}
+
+.botao-modo-escuro.modo-escuro {
+    background-color: white;
+}
+
+.botao-modo-escuro img.modo-escuro {
+    filter: invert(0);
+}
+
+/* Fontes */
+@font-face {
+    font-family: Inter;
+    src: url(fontes/inter/inter.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fontes/montserrat/montserrat.ttf);
+}

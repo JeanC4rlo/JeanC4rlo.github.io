@@ -2,8 +2,12 @@
     margin: 0;
 }
 
-body {
+main {
     padding: 0 10%;
+
+    @media (max-width: 700px) {
+        padding: 0 15%;
+    }
 }
 
 img {
@@ -28,6 +32,10 @@ header p {
 header h1 {
     font-family: Montserrat;
     font-size: 10vh;
+
+    @media (max-width: 700px) {
+        font-size: 42pt;
+    }
 }
 
 header:after {
@@ -76,13 +84,23 @@ article {
     max-width: 480px;
     padding: 20px;
     border-radius: 1rem;
+
+    @media (max-width: 700px) {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 article img {
     box-sizing: border-box;
-    min-width: 440px;
     max-width: 440px;
+    min-width: 440px;
     padding: 2px;
+
+    @media (max-width: 700px) {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
 
 article a {
@@ -101,7 +119,16 @@ article h3 {
     font-family: Montserrat;
     font-size: 22pt;
     margin-top: 1rem;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
+
+    line-height: 1.15em;
+
+    text-align: center;
+
+    @media (max-width: 700px) {
+        font-size: 16pt;
+        line-height: 1.15em;
+    }
 }
 
 article p {
@@ -111,6 +138,10 @@ article p {
     padding: 0 5px;
 
     margin-bottom: 1rem;
+
+    @media (max-width: 700px) {
+        font-size: 9pt;
+    }
 }
 
 .botao-modo-escuro {
@@ -129,12 +160,24 @@ article p {
     border-radius: 50%;
 
     transition: background-color 500ms ease;
+
+    @media (max-width: 700px) {
+        bottom: 0.5rem;
+        right: 0.5rem;
+        min-width: 3rem;
+        min-height: 3rem;
+    }
 }
 
 .botao-modo-escuro img {
     max-width: 2.5rem;
     max-height: 2.5rem;
     filter: invert(1);
+
+    @media (max-height: 700px) {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
 }
 
 button:hover {

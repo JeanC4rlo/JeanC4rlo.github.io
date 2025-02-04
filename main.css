@@ -60,6 +60,7 @@ main h2 {
 
 section {
     display: flex;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }

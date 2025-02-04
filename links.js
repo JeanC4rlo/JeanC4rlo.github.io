@@ -16,22 +16,24 @@ async function carregarLink(link) {
         let descricao = doc.querySelector('meta[property="og:description"]');
 
         let $artigo = $("<article>");
+
         let $imagem = $(`<img src=${imagem.getAttribute("content")}>`)
-        let $url = $(`<a lang="en" href="${url.getAttribute("content")}">${url.getAttribute("content")}</a>`)
         let $titulo = $(`<h3>${titulo.getAttribute("content")}</h3>`)
         let $descricao = $(`<p lang="pt-BR">${descricao.getAttribute("content")}</p>`)
+        let $url = $(`<a lang="en" href="${url.getAttribute("content")}">Acessar</a>`)
 
-        if(localStorage.getItem("modo") == "escuro") {
+        if(localStorage.getItem("modo") === "escuro") {
+            $artigo.addClass("modo-escuro");
             $imagem.addClass("modo-escuro");
-            $url.addClass("modo-escuro");
             $titulo.addClass("modo-escuro");
             $descricao.addClass("modo-escuro");
+            $url.addClass("modo-escuro");
         }
 
         $imagem.appendTo($artigo);
-        $url.appendTo($artigo);
         $titulo.appendTo($artigo);
         $descricao.appendTo($artigo);
+        $url.appendTo($artigo);
 
         $artigo.appendTo("section");
     }
@@ -41,4 +43,4 @@ async function carregarLink(link) {
     }
 }
 
-links.forEach(carregarLink)
+links.forEach(carregarLink);

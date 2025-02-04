@@ -70,17 +70,27 @@ article img, article h3, article p {
     user-select: none;
 }
 
+article {
+    box-sizing: border-box;
+    min-width: 480px;
+    max-width: 480px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
 article img {
-    width: 480px;
+    box-sizing: border-box;
+    min-width: 440px;
+    max-width: 440px;
     padding: 2px;
 }
 
 article a {
     text-decoration: none;
     font-family: Inter;
-    font-size: 10pt;
-
-    margin-top: 1rem;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 article h3, article p {
@@ -90,6 +100,7 @@ article h3, article p {
 article h3 {
     font-family: Montserrat;
     font-size: 22pt;
+    margin-top: 1rem;
     margin-bottom: 2px;
 }
 
@@ -97,7 +108,9 @@ article p {
     font-family: Inter;
     font-size: 11pt;
     text-align: justify;
-    padding: 0 5%;
+    padding: 0 5px;
+
+    margin-bottom: 1rem;
 }
 
 .botao-modo-escuro {
@@ -138,12 +151,22 @@ header:after {
     background-color: black;
 }
 
+article {
+    background-color: black;
+}
+
 article img {
-    border: 2px solid black;
+    border: 2px solid white;
+}
+
+article h3, article p {
+    color: white;
 }
 
 article a {
-    color: navy;
+    background-color: rgb(0, 75, 135);
+    color: white;
+    border: 2px solid white;
 }
 
 .botao-modo-escuro {
@@ -165,16 +188,26 @@ p.modo-escuro {
     color: white;
 }
 
+article.modo-escuro {
+    background-color: white;
+}
+
 article img.modo-escuro {
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 article a.modo-escuro {
-    color: skyblue;
+    background-color: skyblue;
+    color: black;
+    border: 2px solid black;
 } 
 
 article h3.modo-escuro {
-    color: white;
+    color: black;
+}
+
+article p.modo-escuro {
+    color: black;
 }
 
 .botao-modo-escuro.modo-escuro {

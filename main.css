@@ -6,7 +6,7 @@ main {
     padding: 0 10%;
 
     @media (max-width: 700px) {
-        padding: 0 15%;
+        padding: 0 20%;
     }
 }
 
@@ -60,7 +60,8 @@ main h2 {
 
 section {
     display: flex;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -159,6 +160,8 @@ article p {
 
     border: none;
     border-radius: 50%;
+
+    -webkit-tap-highlight-color: transparent;
 
     transition: background-color 500ms ease;
 

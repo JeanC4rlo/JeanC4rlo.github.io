@@ -17,26 +17,22 @@ async function carregarLink(link) {
         let descricao = doc.querySelector('meta[property="og:description"]');
 
         let $artigo = $("<article>");
-
         let $imagem = $(`<img src=${imagem.getAttribute("content")}>`)
+
+        $imagem.appendTo($artigo);
+
+        let $informacoes = $('<div class="informacoes"></div>')
+
         let $titulo = $(`<h3>${titulo.getAttribute("content")}</h3>`)
         let $descricao = $(`<p lang="pt-BR">${descricao.getAttribute("content")}</p>`)
         let $url = $(`<a lang="en" href="${url.getAttribute("content")}" target="_blank">Acessar</a>`)
 
-        if(localStorage.getItem("modo") === "escuro") {
-            $artigo.addClass("modo-escuro");
-            $imagem.addClass("modo-escuro");
-            $titulo.addClass("modo-escuro");
-            $descricao.addClass("modo-escuro");
-            $url.addClass("modo-escuro");
-        }
+        $titulo.appendTo($informacoes);
+        $descricao.appendTo($informacoes);
+        $url.appendTo($informacoes);
 
-        $imagem.appendTo($artigo);
-        $titulo.appendTo($artigo);
-        $descricao.appendTo($artigo);
-        $url.appendTo($artigo);
-
-        $artigo.appendTo("section");
+        $informacoes.appendTo($artigo)
+        $artigo.appendTo(".projetos");
     }
     catch(error) {
         console.error("Erro ao tentar carregar meta tags:", error);
